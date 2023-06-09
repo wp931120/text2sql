@@ -15,7 +15,7 @@ prompt engineering 就是写好这四块东西Instruction，Context，Input Data
 让模型的输出Output越准越好。
 
 # text2sql  prompt
-
+```
 > prompt = """
 >         现在你是一个数据分析师,SQL大神,请根据用户提供的表的信息，以及用户的需求，写出效率最高的SQL,
 >         表信息如下：
@@ -31,6 +31,7 @@ prompt engineering 就是写好这四块东西Instruction，Context，Input Data
 >      {}
 > <aibot>:
 > """.format(prompt)
+```
   
   输出结果：  #SELECT COUNT(*) FROM students WHERE age > 23 AND name LIKE '%andy%' AND location = 'beijing'#
   
