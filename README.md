@@ -1,4 +1,6 @@
 # 大模型prompt engineering 教程
+博客地址：https://zhuanlan.zhihu.com/p/635799364
+
 prompt的组成包四个元素：
 
 + Instruction（指令，必须）
