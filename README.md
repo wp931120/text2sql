@@ -9,7 +9,7 @@ prompt的组成包四个元素：
 一个面向复杂任务的prompt的一般都包含Instruction，Context，Input Data，Output Indicator。
 
 所以面向大语言模型的开发应用过程就是如下公式：
-##LMM(Instruction + Context + Input Data + Output Indicator)  = Output##
+**LMM(Instruction + Context + Input Data + Output Indicator)  = Output**
 
 prompt engineering 就是写好这四块东西Instruction，Context，Input Data，Output Indicator
 让模型的输出Output越准越好。
