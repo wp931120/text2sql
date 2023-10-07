@@ -40,6 +40,7 @@ prompt engineering 就是写好这四块东西Instruction，Context，Input Data
 
 # 大模型text2sql 微调教程
 LLM大模型：https://huggingface.co/baichuan-inc/Baichuan-13B-Chat
+
 训练数据：https://huggingface.co/datasets/Clinton/Text-to-sql-v1
 ```
 数据格式如下：
