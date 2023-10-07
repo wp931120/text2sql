@@ -38,3 +38,8 @@ prompt engineering 就是写好这四块东西Instruction，Context，Input Data
   输出结果：  #SELECT COUNT(*) FROM students WHERE age > 23 AND name LIKE '%andy%' AND location = 'beijing'#
   ![image](https://github.com/wp931120/text2sql/assets/28627216/9e43aba9-fefc-4fc8-8537-8b7082424348)
 
+# 大模型text2sql 微调教程
+
+![image](https://github.com/wp931120/text2sql/assets/28627216/4aef1e11-36ab-4617-ac02-c74f52bbd222)
+![image](https://github.com/wp931120/text2sql/assets/28627216/521910a9-9147-4bcf-9610-27a42b9ce7e8)
+
