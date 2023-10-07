@@ -39,8 +39,8 @@ prompt engineering 就是写好这四块东西Instruction，Context，Input Data
   ![image](https://github.com/wp931120/text2sql/assets/28627216/9e43aba9-fefc-4fc8-8537-8b7082424348)
 
 # 大模型text2sql 微调教程
-训练数据：
-https://huggingface.co/datasets/Clinton/Text-to-sql-v1
+LLM大模型：https://huggingface.co/baichuan-inc/Baichuan-13B-Chat
+训练数据：https://huggingface.co/datasets/Clinton/Text-to-sql-v1
 ```
 数据格式如下：
 """Below are sql tables schemas paired with instruction that describes a task. Using valid SQLite, write a response that appropriately completes the request for the provided tables. ### Instruction: provide the number of patients whose diagnoses icd9 code is 60000? ### Input: CREATE TABLE procedures (\n    subject_id text,\n    hadm_id text,\n    icd9_code text,\n    short_title text,\n    long_title text\n)\n\nCREATE TABLE prescriptions (\n    subject_id text,\n    hadm_id text,\n    icustay_id text,\n    drug_type text,\n    drug text,\n    formulary_drug_cd text,\n    route text,\n    drug_dose text\n)\n\nCREATE TABLE demographic (\n    subject_id text,\n    hadm_id text,\n    name text,\n    marital_status text,\n    age text,\n    dob text,\n    gender text,\n    language text,\n    religion text,\n    admission_type text,\n    days_stay text,\n    insurance text,\n    ethnicity text,\n    expire_flag text,\n    admission_location text,\n    discharge_location text,\n    diagnosis text,\n    dod text,\n    dob_year text,\n    dod_year text,\n    admittime text,\n    dischtime text,\n    admityear text\n)\n\nCREATE TABLE lab (\n    subject_id text,\n    hadm_id text,\n    itemid text,\n    charttime text,\n    flag text,\n    value_unit text,\n    label text,\n    fluid text\n)\n\nCREATE TABLE diagnoses (\n    subject_id text,\n    hadm_id text,\n    icd9_code text,\n    short_title text,\n    long_title text\n) ### Response:"""
